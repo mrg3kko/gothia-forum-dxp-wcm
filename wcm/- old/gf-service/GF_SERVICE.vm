@@ -1,0 +1,80 @@
+<div class="actor-profile">
+	##<h1>${actor-name.data}</h1>
+	<h1>${reserved-article-title.data}</h1>
+	<div class="aui-layout">
+		<div class="aui-layout-content">
+			<div class="aui-column aui-w60  aui-column-first">
+				<div class="aui-column-content aui-column-content-first">
+					<p class="intro">${subtitle.data}</p>
+					<div class="description">
+						${description.data}
+					</div>
+				</div>
+			</div>
+			<div class="aui-column aui-w40 aui-column-last">
+				<div class="aui-column-content aui-column-content-last">
+					<div class="contact-box">
+						#set($cntName = "")
+						#set($cntAdress = "")
+						#set($cntPhone = "")
+						#set($cntMobile = "")
+						#set($cntFax = "")
+						#set($cntEmail = "")
+						#set($cntWeb = "")
+						#set($cntPic = "")
+
+						#foreach($contactAttr in ${contact.children})
+							#if(${contactAttr.name} == "cnt-name")
+								#set($cntName = ${contactAttr.data})
+							#elseif(${contactAttr.name} == "cnt-adress")
+								#set($cntAdress = ${contactAttr.data})
+							#elseif(${contactAttr.name} == "cnt-phone")
+								#set($cntPhone = ${contactAttr.data})
+							#elseif(${contactAttr.name} == "cnt-mobile")
+								#set($cntMobile = ${contactAttr.data})
+							#elseif(${contactAttr.name} == "cnt-fax")
+								#set($cntFax = ${contactAttr.data})
+							#elseif(${contactAttr.name} == "cnt-email")
+								#set($cntEmail = ${contactAttr.data})
+							#elseif(${contactAttr.name} == "cnt-web")
+								#set($cntWeb = ${contactAttr.data})
+							#elseif(${contactAttr.name} == "cnt-pic")
+								#set($cntPic = ${contactAttr.data})
+							#end
+						#end
+
+						<ul class="cnt-list">
+							<li class="cnt-person">
+								<span class="cnt-label">Kontaktperson:</span>
+								<span class="cnt-data">${cntName}</span>
+							</li>
+							<li class="cnt-phone">
+								<span class="cnt-label">Telefon:</span>
+								<span class="cnt-data">${cntPhone}</span>
+							</li>
+							<li class="cnt-email">
+								<span class="cnt-label">Epost:</span>
+								<span class="cnt-data">${cntEmail}</span>
+							</li>
+							<li class="cnt-web">
+								<span class="cnt-label">Webbplats:</span>
+								<span class="cnt-data">${cntWeb}</span>
+							</li>
+							<li class="cnt-adress">
+								<span class="cnt-label">Bes&ouml;ksadress:</span>
+								<span class="cnt-data">${cntAdress}</span>
+							</li>
+						</ul>
+
+						## Put logo down here
+						#*
+						<div class="logo-wrap">
+							<img src="" alt="${actor-name.data}" />
+						</div>
+						*#
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

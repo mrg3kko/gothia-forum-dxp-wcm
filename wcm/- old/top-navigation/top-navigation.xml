@@ -1,0 +1,134 @@
+
+<root available-locales="sv_SE" default-locale="sv_SE">
+	<dynamic-element dataType="string" indexType="keyword" name="links" readOnly="false" repeatable="true" required="false" showLabel="true" type="text" width="large">
+		<dynamic-element dataType="link-to-page" fieldNamespace="ddm" indexType="keyword" name="internalLink" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-link-to-page" width="large">
+			<meta-data locale="sv_SE">
+				<entry name="label">
+					<![CDATA[Link Layout]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="string" indexType="keyword" name="externalLink" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
+			<meta-data locale="sv_SE">
+				<entry name="label">
+					<![CDATA[External link]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="string" indexType="keyword" multiple="false" name="linkTarget" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
+			<dynamic-element name="option14951" type="option" value="_SELF">
+				<meta-data locale="sv_SE">
+					<entry name="label">
+						<![CDATA[Samma fönster]]>
+					</entry>
+				</meta-data>
+			</dynamic-element>
+			<dynamic-element name="option14952" type="option" value="_BLANK">
+				<meta-data locale="sv_SE">
+					<entry name="label">
+						<![CDATA[Nytt fönster]]>
+					</entry>
+				</meta-data>
+			</dynamic-element>
+			<meta-data locale="sv_SE">
+				<entry name="label">
+					<![CDATA[Link Target]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[[""]]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="sv_SE">
+			<entry name="label">
+				<![CDATA[Link Label]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" name="linkSignin" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
+		<meta-data locale="sv_SE">
+			<entry name="label">
+				<![CDATA[Link Label Signin]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" name="linkSignout" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
+		<meta-data locale="sv_SE">
+			<entry name="label">
+				<![CDATA[Link Label Signout]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="keyword" name="linkProfile" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
+		<dynamic-element dataType="link-to-page" fieldNamespace="ddm" indexType="keyword" name="linkProfileLayout" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-link-to-page" width="large">
+			<meta-data locale="sv_SE">
+				<entry name="label">
+					<![CDATA[Profile Link Layout]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="string" indexType="keyword" name="linkProfileHelp" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
+			<meta-data locale="sv_SE">
+				<entry name="label">
+					<![CDATA[Profile Link Help]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="sv_SE">
+			<entry name="label">
+				<![CDATA[Profile Link Label]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>
