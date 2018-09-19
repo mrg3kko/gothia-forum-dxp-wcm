@@ -1,0 +1,29 @@
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element dataType="string" indexType="" localizable="true" name="vgas0464" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="25">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[vgas0464]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="" localizable="true" name="vgas0465" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="25">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[vgas0465]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>

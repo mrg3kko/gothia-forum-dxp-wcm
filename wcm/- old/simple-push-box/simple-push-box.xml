@@ -1,0 +1,89 @@
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element dataType="document-library" fieldNamespace="ddm" indexType="" localizable="true" name="image" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-documentlibrary" width="">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Bild]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[V&auml;lj bild f&ouml;r push boxen (puffen).]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="" localizable="true" name="link" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="25">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[L&auml;nk]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Skriv in l&auml;nk till push boxens landningssida (t.ex. /web/guest/pagaende-fou).]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="" localizable="true" name="image-alt" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="25">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Beskrivning av bildens inneh&aring;ll]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Skriv in en beskrivning av bildens inneh&aring;ll- presenteras f&ouml;r t.ex. s&ouml;kmotorer och bes&ouml;kare med s.k. screen readers (synskadade i regel).]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="boolean" indexType="" localizable="true" name="link-target-blank" readOnly="false" repeatable="false" required="false" showLabel="true" type="checkbox" width="">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[&Ouml;ppna l&auml;nk i nytt f&ouml;nster (eller tabb)]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[false]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[V&auml;lj om l&auml;nken skall &ouml;ppnas i ett nytt f&ouml;nster (eller tabb)]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="" localizable="true" multiple="false" name="show-when" readOnly="false" repeatable="false" required="true" showLabel="true" type="select" width="">
+		<dynamic-element name="optiongltw" type="option" value="0">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Alltid]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="optionjxwj" type="option" value="1">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Inloggad]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element name="optionlwmn" type="option" value="2">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Utloggad]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Visa n&auml;r]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[[]]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[V&auml;lj n&auml;r artikeln ska visas.]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>

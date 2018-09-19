@@ -1,0 +1,55 @@
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element dataType="string" indexType="" localizable="true" name="placeTitle" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="25">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Platsnamn]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Skriv in ben&auml;mning p&aring; platsen.]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="" localizable="true" name="streetAddress" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="25">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Gatuadress]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Skriv in gatuadress.]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="" localizable="true" name="zipCode" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="25">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Postnummer]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Skriv in postnummer.]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="string" indexType="" localizable="true" name="city" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="25">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Postort]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Skriv in postort.]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>

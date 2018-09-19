@@ -1,0 +1,160 @@
+#set ($layoutLocalService = $serviceLocator.findService("com.liferay.portal.service.LayoutLocalServiceUtil"))
+#set ($themeDisplay = $request.get('theme-display'))
+#set ($currentPlid = $getterUtil.getLong($themeDisplay.get('plid')))
+#set ($currentLayout = $layoutLocalService.getLayout($currentPlid))
+#set ($iurl = "/image/image_gallery?uuid=")
+
+  <div class="tos-tool">
+    <div class="tos-content">
+      <div class="tos-title">$reserved-article-title.data</div>
+      #foreach($sub in $subtitle.getSiblings())
+        <div class="tos-subtitle">$sub.getData()</div>
+      #end
+
+      <table class="tos-contacts">
+        #if(!$contact.getData().equals(""))
+        <tr class="tos-persons">
+          <td width="29px" class="tos-icon"><img src="$iurl a0e07086-981d-403b-8967-09b9ffc58f36&groupId=10136&t=1275395720638" /></td>
+          <td>
+            <table class="tos-list">
+            #foreach($cnt in $contact.getSiblings())
+              #set ($layoutId = $getterUtil.getLong($cnt.getData()))
+              #set ($layout = $layoutLocalService.getLayout($getterUtil.getLong($groupId), $currentLayout.isPrivateLayout(), $layoutId))
+              <tr><td class="tos-contact">Contact Person: <a href="$cnt.getUrl()">$layout.getName()</a></td></tr>
+            #end
+            </table>
+          </td>
+        </tr>
+        #end
+        <tr class="tos-organizations">
+          <td width="29px" class="tos-icon"><img src="$iurl 0ef6825d-3171-41c6-86c5-847bc3a3b378&groupId=10136&t=1275323337438" /></td>
+          <td>
+            <table class="tos-list">
+            #foreach($org in $organization.getSiblings())
+              #set ($layoutId = $getterUtil.getLong($org.getData()))
+              #set ($layout = $layoutLocalService.getLayout($getterUtil.getLong($groupId), $currentLayout.isPrivateLayout(), $layoutId))
+              <tr><td class="tos-organization"><a href="$org.getUrl()">$layout.getName()</a></td></tr>
+            #end
+            </table>
+          </td>
+        </tr>
+      </table>
+      <br />
+
+      <table class="tos-teaser">
+        <tr>
+          #if(!$logo.getData().equals(""))
+          <td class="tos-logo"><div><img src="$logo.getData()" /><br/><br/></div></td>
+          #end
+          <td class="tos-text"><div>$teaser.getData()</div></td>
+        </tr>
+      </table>
+      <br />
+
+      <!--
+      Keywords
+      Company website
+      -->
+
+      <div class="tos-description">$description.getData()</div>
+
+            <table class="tos-contacts">
+        #if(!$contact.getData().equals(""))
+        <tr>
+          <td colspan="3" class="tos-page-jumpout">Contacts persons ($contact.getSiblings().size())</td>
+        </tr>
+        <tr class="tos-persons">
+          <td width="29px" class="tos-icon"><img src="$iurl a0e07086-981d-403b-8967-09b9ffc58f36&groupId=10136&t=1275395720638" /></td>
+          <td>
+            <table class="tos-list">
+            #foreach($cnt in $contact.getSiblings())
+              #set ($layoutId = $getterUtil.getLong($cnt.getData()))
+              #set ($layout = $layoutLocalService.getLayout($getterUtil.getLong($groupId), $currentLayout.isPrivateLayout(), $layoutId))
+              <tr><td class="tos-contact">Contact Person: <a href="$contact.getUrl()">$layout.getName()</a></td></tr>
+            #end
+            </table>
+          </td>
+        </tr>
+        #end
+        #if(!$organization.getData().equals(""))
+        <tr>
+          <td colspan="3" class="tos-page-jumpout">Organizations ($organization.getSiblings().size())</td>
+        </tr>
+        <tr class="tos-organizations">
+          <td width="29px" class="tos-icon"><img src="$iurl 0ef6825d-3171-41c6-86c5-847bc3a3b378&groupId=10136&t=1275323337438" /></td>
+          <td>
+            <table class="tos-list">
+            #foreach($org in $organization.getSiblings())
+              #set ($layoutId = $getterUtil.getLong($org.getData()))
+              #set ($layout = $layoutLocalService.getLayout($getterUtil.getLong($groupId), $currentLayout.isPrivateLayout(), $layoutId))
+              <tr><td class="tos-organization"><a href="$organization.getUrl()">$layout.getName()</a></td></tr>
+            #end
+            </table>
+          </td>
+        </tr>
+        #end
+        #if(!$area.getData().equals(""))
+        <tr>
+          <td colspan="3" class="tos-page-jumpout">Thematic areas ($area.getSiblings().size())</td>
+        </tr>
+        <tr class="tos-areas">
+          <td width="29px" class="tos-icon"><img src="$iurl 0ef6825d-3171-41c6-86c5-847bc3a3b378&groupId=10136&t=1275323337438" /></td>
+          <td>
+            <table class="tos-list">
+            #foreach($ar in $area.getSiblings())
+              #set ($layoutId = $getterUtil.getLong($ar.getData()))
+              #set ($layout = $layoutLocalService.getLayout($getterUtil.getLong($groupId), $currentLayout.isPrivateLayout(), $layoutId))
+              <tr><td class="tos-area"><a href="$ar.getUrl()">$layout.getName()</a></td></tr>
+            #end
+            </table>
+          </td>
+        </tr>
+        #end
+        #if(!$academic-tool.getData().equals(""))
+        <tr>
+          <td colspan="3" class="tos-page-jumpout">Academic tools ($academic-tool.getSiblings().size())</td>
+        </tr>
+        <tr class="tos-academic-tools">
+          <td width="29px" class="tos-icon"><img src="$iurl 10732" /></td>
+          <td>
+            <table class="tos-list">
+            #foreach($tool in $academic-tool.getSiblings())
+              #set ($layoutId = $getterUtil.getLong($tool.getData()))
+              #set ($layout = $layoutLocalService.getLayout($getterUtil.getLong($groupId), $currentLayout.isPrivateLayout(), $layoutId))
+              <tr><td class="tos-tool"><a href="$tool.getUrl()">$layout.getName()</a></td></tr>
+            #end
+            </table>
+          </td>
+        </tr>
+        #end
+        #if(!$industri-tool.getData().equals(""))
+        <tr>
+          <td colspan="3" class="tos-page-jumpout">Industry tools ($industri-tool.getSiblings().size())</td>
+        </tr>
+        <tr class="tos-company-tools">
+          <td width="29px" class="tos-icon"><img src="$iurl 10732" /></td>
+          <td>
+            <table class="tos-list">
+            #foreach($tool in $industri-tool.getSiblings())
+              #set ($layoutId = $getterUtil.getLong($tool.getData()))
+              #set ($layout = $layoutLocalService.getLayout($getterUtil.getLong($groupId), $currentLayout.isPrivateLayout(), $layoutId))
+              <tr><td class="tos-tool"><a href="$tool.getUrl()">$layout.getName()</a></td></tr>
+            #end
+            </table>
+          </td>
+        </tr>
+        #end
+      </table>
+      <br />
+
+
+      <div><span>Last Updated:</span> $reserved-article-modified-date.data</div>
+    </div>
+    <div class="tos-image">
+    #foreach($image in $image.getSiblings())
+      #if(!$image.getData().equals(""))
+      <img src="$image.getData()" />
+      #end
+    #end
+    </div>
+  </div>

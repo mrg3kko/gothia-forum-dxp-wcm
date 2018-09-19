@@ -1,0 +1,29 @@
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element dataType="string" indexType="" localizable="true" name="faqEntries" readOnly="false" repeatable="true" required="true" showLabel="true" type="textarea" width="25">
+		<dynamic-element dataType="html" fieldNamespace="ddm" indexType="" localizable="true" name="answer" readOnly="false" repeatable="false" required="true" showLabel="true" type="ddm-text-html" width="25">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[FAQ - Svar]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[Skriv svaret p&aring; FAQ fr&aring;gan.]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[FAQ - Fr&aring;ga]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Skriv FAQ fr&aring;gan. Klicka p&aring; plustecknet f&ouml;r att l&auml;gga till en ny fr&aring;ga.]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>

@@ -1,0 +1,68 @@
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element dataType="document-library" fieldNamespace="ddm" indexType="" localizable="true" name="images" readOnly="false" repeatable="true" required="true" showLabel="true" type="ddm-documentlibrary" width="">
+		<dynamic-element dataType="string" indexType="" localizable="true" name="link" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="25">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Bildl&auml;nk]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[Skriv in l&auml;nk till sida dit anv&auml;ndaren kommer om denne klickar p&aring; bilden.]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="string" indexType="" localizable="true" name="alt" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="25">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Beskrivning av bildens inneh&aring;ll]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[Skriv in en beskrivning av bildens inneh&aring;ll- presenteras f&ouml;r t.ex. s&ouml;kmotorer och bes&ouml;kare med s.k. screen readers (synskadade i regel).]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="boolean" indexType="" localizable="true" name="targetBlank" readOnly="false" repeatable="false" required="false" showLabel="true" type="checkbox" width="">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[&Ouml;ppna l&auml;nk i nytt f&ouml;nster (eller tabb)]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[false]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[V&auml;lj om l&auml;nken skall &ouml;ppnas i ett nytt f&ouml;nster (eller tabb)]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Bild]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[V&auml;lj bild i bildgalleriet.]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+	<dynamic-element dataType="html" fieldNamespace="ddm" indexType="" localizable="true" name="content" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-text-html" width="25">
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Br&ouml;dtext]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Skriv in br&ouml;dtext f&ouml;r artikeln.]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>

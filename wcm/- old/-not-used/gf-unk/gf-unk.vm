@@ -1,0 +1,4 @@
+<div class="gf-link-article">
+  <div class="gf-link-title"><a target="_blank" href="$link.data">$link.data</a></div>
+  <div class="gf-link-description">$reserved-article-description.data</div>
+</div>

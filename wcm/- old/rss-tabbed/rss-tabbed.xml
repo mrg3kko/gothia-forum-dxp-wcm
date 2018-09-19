@@ -1,0 +1,42 @@
+
+<root available-locales="en_US" default-locale="en_US">
+	<dynamic-element dataType="string" indexType="" localizable="true" name="rssFeedURL" readOnly="false" repeatable="true" required="true" showLabel="true" type="text" width="25">
+		<dynamic-element dataType="string" indexType="" localizable="true" name="rssFeedLabel" readOnly="false" repeatable="false" required="true" showLabel="true" type="text" width="25">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Feed - namn]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[Feednamn]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[Skriv in feedets namn.]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<dynamic-element dataType="string" indexType="" localizable="true" name="maxCount" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="25">
+			<meta-data locale="en_US">
+				<entry name="label">
+					<![CDATA[Maxantal feed entries]]>
+				</entry>
+				<entry name="predefinedValue">
+					<![CDATA[10]]>
+				</entry>
+				<entry name="tip">
+					<![CDATA[Skriv in maximala antalet feed entries som skall visas. V&auml;rdet skall vara ett heltalsv&auml;rde. Om f&auml;ltet l&auml;mnas tomt s&aring; kommer alla entries visas. Om ett v&auml;rde som inte &auml;r ett heltal skrivs in s&aring; kommer ett defaultv&auml;rde om 10 anv&auml;ndas.]]>
+				</entry>
+			</meta-data>
+		</dynamic-element>
+		<meta-data locale="en_US">
+			<entry name="label">
+				<![CDATA[Feed - URL]]>
+			</entry>
+			<entry name="predefinedValue">
+				<![CDATA[]]>
+			</entry>
+			<entry name="tip">
+				<![CDATA[Skriv in feedens URL.]]>
+			</entry>
+		</meta-data>
+	</dynamic-element>
+</root>

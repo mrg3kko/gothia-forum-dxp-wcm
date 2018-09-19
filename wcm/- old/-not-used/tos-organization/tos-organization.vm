@@ -1,0 +1,129 @@
+<div class="tos-company">
+  #set ( $iurl = "/image/image_gallery?uuid=" )
+    <div class="tos-content">
+      <div class="tos-title">$name.getData()</div>
+      <br />
+      <table class="tos-organization-contact">
+        <tr>
+          <td>
+            <table class="tos-contact-list">
+              <tr>
+                <td colspan="3"><div class="tos-adress">$name.adress.getData()</div></td>
+              </tr>
+              <tr>
+                <td colspan="3"><div class="tos-postal-code">$name.postal-code.getData()</div><br/></td>
+              <tr>
+                <td width="1px">Phone:<td>
+                <td>$name.phone.getData()</td>
+              </tr>
+              <tr>
+                <td width="1px">Fax:<td>
+                <td>$name.fax.getData()</td>
+              </tr>
+              <tr>
+                <td width="1px">Web:<td>
+                <td><a href="$name.web.getData()">$name.web.getData()</a></td>
+              </tr>
+            </table>
+          </td>
+          <td class="tos-logo"><div><img src="$name.logo.getData()" /></div></td>
+        </tr>
+      </table>
+      <br />
+      <br />
+
+      <div class="tos-teaser tos-text">$name.teaser.getData()</div>
+      <br />
+
+      <div class="tos-description">$name.description.getData()</div>
+      <br />
+
+      <table class="tos-contacts">
+        #if(!$name.contact.getData().equals(""))
+        <tr>
+          <td colspan="3" class="tos-page-jumpout">Contacts persons ($name.contact.getSiblings().size())</td>
+        </tr>
+        <tr class="tos-persons">
+          <td width="29px" class="tos-icon"><img src="$iurl 10736" /></td>
+          <td>
+            <table class="tos-list">
+            #foreach($contact in $name.contact.getSiblings())
+              <tr><td class="tos-contact">Contact Person: <a href="$contact.getUrl()">$contact.getData()</a></td></tr>
+            #end
+            </table>
+          </td>
+        </tr>
+        #end
+        #if(!$name.organization.getData().equals(""))
+        <tr>
+          <td colspan="3" class="tos-page-jumpout">Organizations ($name.organization.getSiblings().size())</td>
+        </tr>
+        <tr class="tos-organizations">
+          <td width="29px" class="tos-icon"><img src="$iurl a0e07086-981d-403b-8967-09b9ffc58f36&groupId=10136&t=1275395720638" /></td>
+          <td>
+            <table class="tos-list">
+            #foreach($organization in $name.organization.getSiblings())
+              <tr><td class="tos-organization"><a href="$organization.getUrl()">$organization.getData()</a></td></tr>
+            #end
+            </table>
+          </td>
+        </tr>
+        #end
+        #if(!$name.area.getData().equals(""))
+        <tr>
+          <td colspan="3" class="tos-page-jumpout">Thematic areas ($name.area.getSiblings().size())</td>
+        </tr>
+        <tr class="tos-areas">
+          <td width="29px" class="tos-icon"><img src="$iurl 0ef6825d-3171-41c6-86c5-847bc3a3b378&groupId=10136&t=1275323337438" /></td>
+          <td>
+            <table class="tos-list">
+            #foreach($area in $name.area.getSiblings())
+              <tr><td class="tos-area"><a href="$area.getUrl()">$area.getData()</a></td></tr>
+            #end
+            </table>
+          </td>
+        </tr>
+        #end
+        #if(!$name.academic-tool.getData().equals(""))
+        <tr>
+          <td colspan="3" class="tos-page-jumpout">Academic tools ($name.academic-tool.getSiblings().size())</td>
+        </tr>
+        <tr class="tos-academic-tools">
+          <td width="29px" class="tos-icon"><img src="$iurl  0ef6825d-3171-41c6-86c5-847bc3a3b378&groupId=10136&t=1275323337438" /></td>
+          <td>
+            <table class="tos-list">
+            #foreach($academic-tool in $name.academic-tool.getSiblings())
+              <tr><td class="tos-tool"><a href="$academic-tool.getUrl()">$academic-tool.getData()</a></td></tr>
+            #end
+            </table>
+          </td>
+        </tr>
+        #end
+        #if(!$name.industri-tool.getData().equals(""))
+        <tr>
+          <td colspan="3" class="tos-page-jumpout">Industry tools ($name.industri-tool.getSiblings().size())</td>
+        </tr>
+        <tr class="tos-company-tools">
+          <td width="29px" class="tos-icon"><img src="$iurl  0ef6825d-3171-41c6-86c5-847bc3a3b378&groupId=10136&t=1275323337438" /></td>
+          <td>
+            <table class="tos-list">
+            #foreach($industri-tool in $name.industri-tool.getSiblings())
+              <tr><td class="tos-tool"><a href="$industri-tool.getUrl()">$industri-tool.getData()</a></td></tr>
+            #end
+            </table>
+          </td>
+        </tr>
+        #end
+      </table>
+      <br />
+
+      <div><span>Last Updated:</span> $reserved-article-modified-date.data</div>
+    </div>
+    <div class="tos-image">
+    #foreach($image in $name.image.getSiblings())
+      #if(!$image.getData().equals(""))
+      <img src="$image.getData()" /><br/>
+      #end
+    #end
+    </div>
+  </div>
