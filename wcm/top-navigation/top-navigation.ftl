@@ -1,7 +1,7 @@
 <#-- Define some services -->
-<#assign groupLocalService = serviceLocator.findService("com.liferay.portal.service.GroupLocalService") >
-<#assign layoutLocalService = serviceLocator.findService("com.liferay.portal.service.LayoutLocalService") >
-<#assign layoutSetLocalService = serviceLocator.findService("com.liferay.portal.service.LayoutSetLocalService") >
+<#assign groupLocalService = serviceLocator.findService("com.liferay.portal.kernel.service.GroupLocalService") >
+<#assign layoutLocalService = serviceLocator.findService("com.liferay.portal.kernel.service.LayoutLocalService") >
+<#assign layoutSetLocalService = serviceLocator.findService("com.liferay.portal.kernel.service.LayoutSetLocalService") >
 
 <#assign themeDisplay = request["theme-display"] >
 <#assign scopePlid =  getterUtil.getLong(request["theme-display"]["plid"]) >
@@ -54,41 +54,46 @@
 		</#if>
 
 		<#-- Profile Link -->
-		<#assign profileLinkText = linkProfile.data />
-		<#assign profileLinkHelpText = linkProfile.linkProfileHelp.data />
+		<#if linkProfile.linkProfileLayout.data?has_content>
 
-		<#assign profileLinkData = linkProfile.linkProfileLayout.data?split("@") />
+			<#assign profileLinkText = linkProfile.data />
+			<#assign profileLinkHelpText = linkProfile.linkProfileHelp.data />
 
-		<#assign profileLinkLayoutId =  getterUtil.getLong(profileLinkData[0]) />
-		<#assign profileLinkGroupId = getterUtil.getLong(profileLinkData[2]) />
-		<#assign profileLinkIsPrivate = true />
-		<#if profileLinkData[1] == "public">
-			<#assign profileLinkIsPrivate = false />
-		</#if>
+			<#assign profileLinkData = linkProfile.linkProfileLayout.data?split("@") />
 
-		<#assign profileLinkLayout = layoutLocalService.getLayout(profileLinkGroupId, profileLinkIsPrivate, profileLinkLayoutId) >
-		<#assign profileLinkUrl =  profileLinkLayout.getFriendlyURL() >
-
-		<#if profileLinkText = "">
-			<#assign profileLinkText =  profileLinkLayout.getName(locale) >
-		</#if>
-
-		<li class="profile-link">
-			<a href="${profileLinkUrl}">
-				<span>${profileLinkText}</span>
-			</a>
-
-			<#if profileLinkHelpText != "">
-				<span class="profile-help">${profileLinkHelpText}</span>
+			<#assign profileLinkLayoutId =  getterUtil.getLong(profileLinkData[0]) />
+			<#assign profileLinkGroupId = getterUtil.getLong(profileLinkData[2]) />
+			<#assign profileLinkIsPrivate = true />
+			<#if profileLinkData[1] == "public">
+				<#assign profileLinkIsPrivate = false />
 			</#if>
-		</li>
+
+
+			<#assign profileLinkLayout = layoutLocalService.getLayout(profileLinkGroupId, profileLinkIsPrivate, profileLinkLayoutId) >
+			<#assign profileLinkUrl =  profileLinkLayout.getFriendlyURL() >
+
+			<#if profileLinkText = "">
+				<#assign profileLinkText =  profileLinkLayout.getName(locale) >
+			</#if>
+
+			<li class="profile-link">
+				<a href="${profileLinkUrl}">
+					<span>${profileLinkText}</span>
+				</a>
+
+				<#if profileLinkHelpText != "">
+					<span class="profile-help">${profileLinkHelpText}</span>
+				</#if>
+			</li>
+
+		</#if>
 
 	<#else>
 		<#-- Signin -->
 
 	<#if linkSignin.data != "" >
 		<li>
-			<a href="/c/portal/logout">${linkSignin.data}</a>
+			<a href="/c/portal/login">${linkSignin.data}</a>
 		</li>
 	</#if>
 

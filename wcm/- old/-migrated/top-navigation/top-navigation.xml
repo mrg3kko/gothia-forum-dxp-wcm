@@ -1,7 +1,7 @@
 
 <root available-locales="sv_SE" default-locale="sv_SE">
-	<dynamic-element dataType="string" indexType="keyword" name="links" readOnly="false" repeatable="true" required="false" showLabel="true" type="text" width="large">
-		<dynamic-element dataType="link-to-page" fieldNamespace="ddm" indexType="keyword" name="internalLink" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-link-to-page" width="large">
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="links" readOnly="false" repeatable="true" required="false" showLabel="true" type="text" width="large">
+		<dynamic-element dataType="link-to-page" fieldNamespace="ddm" indexType="keyword" localizable="true" name="internalLink" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-link-to-page" width="large">
 			<meta-data locale="sv_SE">
 				<entry name="label">
 					<![CDATA[Link Layout]]>
@@ -14,7 +14,7 @@
 				</entry>
 			</meta-data>
 		</dynamic-element>
-		<dynamic-element dataType="string" indexType="keyword" name="externalLink" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
+		<dynamic-element dataType="string" indexType="keyword" localizable="true" name="externalLink" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
 			<meta-data locale="sv_SE">
 				<entry name="label">
 					<![CDATA[External link]]>
@@ -27,7 +27,7 @@
 				</entry>
 			</meta-data>
 		</dynamic-element>
-		<dynamic-element dataType="string" indexType="keyword" multiple="false" name="linkTarget" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
+		<dynamic-element dataType="string" indexType="keyword" localizable="true" multiple="false" name="linkTarget" readOnly="false" repeatable="false" required="false" showLabel="true" type="select" width="">
 			<dynamic-element name="option14951" type="option" value="_SELF">
 				<meta-data locale="sv_SE">
 					<entry name="label">
@@ -66,7 +66,7 @@
 			</entry>
 		</meta-data>
 	</dynamic-element>
-	<dynamic-element dataType="string" indexType="keyword" name="linkSignin" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="linkSignin" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
 		<meta-data locale="sv_SE">
 			<entry name="label">
 				<![CDATA[Link Label Signin]]>
@@ -79,7 +79,7 @@
 			</entry>
 		</meta-data>
 	</dynamic-element>
-	<dynamic-element dataType="string" indexType="keyword" name="linkSignout" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="linkSignout" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
 		<meta-data locale="sv_SE">
 			<entry name="label">
 				<![CDATA[Link Label Signout]]>
@@ -92,8 +92,8 @@
 			</entry>
 		</meta-data>
 	</dynamic-element>
-	<dynamic-element dataType="string" indexType="keyword" name="linkProfile" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
-		<dynamic-element dataType="link-to-page" fieldNamespace="ddm" indexType="keyword" name="linkProfileLayout" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-link-to-page" width="large">
+	<dynamic-element dataType="string" indexType="keyword" localizable="true" name="linkProfile" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
+		<dynamic-element dataType="link-to-page" fieldNamespace="ddm" indexType="keyword" localizable="true" name="linkProfileLayout" readOnly="false" repeatable="false" required="false" showLabel="true" type="ddm-link-to-page" width="large">
 			<meta-data locale="sv_SE">
 				<entry name="label">
 					<![CDATA[Profile Link Layout]]>
@@ -106,7 +106,7 @@
 				</entry>
 			</meta-data>
 		</dynamic-element>
-		<dynamic-element dataType="string" indexType="keyword" name="linkProfileHelp" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
+		<dynamic-element dataType="string" indexType="keyword" localizable="true" name="linkProfileHelp" readOnly="false" repeatable="false" required="false" showLabel="true" type="text" width="large">
 			<meta-data locale="sv_SE">
 				<entry name="label">
 					<![CDATA[Profile Link Help]]>
