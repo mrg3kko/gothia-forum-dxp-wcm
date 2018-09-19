@@ -9,8 +9,9 @@
 <#assign groupIdLong =  getterUtil.getLong(groupId) >
 <#assign scopeGroup =  groupLocalService.getGroup(groupIdLong) >
 
+<#assign remoteUser = request["remote-user"]! />
 
-<#assign isSignedIn = (request["remote-user"] != "") />
+<#assign isSignedIn = remoteUser?has_content />
 
 <ul class="navigation-list">
 	<#list links.getSiblings() as link>
