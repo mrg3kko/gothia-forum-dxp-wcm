@@ -3,8 +3,8 @@
 <#assign layoutLocalService = serviceLocator.findService("com.liferay.portal.kernel.service.LayoutLocalService") >
 <#assign layoutSetLocalService = serviceLocator.findService("com.liferay.portal.kernel.service.LayoutSetLocalService") >
 
-<#assign themeDisplay = request["theme-display"] >
-<#assign scopePlid =  getterUtil.getLong(request["theme-display"]["plid"]) >
+<#assign themeDisplay = requestMap["theme-display"] >
+<#assign scopePlid =  getterUtil.getLong(requestMap["theme-display"]["plid"]) >
 <#assign scopeLayout =  layoutLocalService.getLayout(scopePlid) >
 <#assign groupIdLong =  getterUtil.getLong(groupId) >
 <#assign scopeGroup =  groupLocalService.getGroup(groupIdLong) >
