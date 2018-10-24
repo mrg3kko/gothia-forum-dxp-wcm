@@ -1,0 +1,54 @@
+{
+    "availableLanguageIds": [
+        "en_US"
+    ],
+    "defaultLanguageId": "en_US",
+    "fields": [
+        {
+            "label": {
+                "en_US": "Börja från nivå"
+            },
+            "options": [
+                {
+                    "value": "1",
+                    "label": {
+                        "en_US": "1"
+                    }
+                },
+                {
+                    "value": "2",
+                    "label": {
+                        "en_US": "2"
+                    }
+                },
+                {
+                    "value": "3",
+                    "label": {
+                        "en_US": "3"
+                    }
+                }
+            ],
+            "predefinedValue": {
+                "en_US": [
+                    ""
+                ]
+            },
+            "style": {
+                "en_US": ""
+            },
+            "tip": {
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "multiple": false,
+            "name": "startLevel",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "select"
+        }
+    ]
+}

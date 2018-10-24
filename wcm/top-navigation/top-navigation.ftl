@@ -9,7 +9,7 @@
 <#assign groupIdLong =  getterUtil.getLong(groupId) >
 <#assign scopeGroup =  groupLocalService.getGroup(groupIdLong) >
 
-<#assign remoteUser = request["remote-user"]! />
+<#assign remoteUser = requestMap["remote-user"]! />
 
 <#assign isSignedIn = remoteUser?has_content />
 
