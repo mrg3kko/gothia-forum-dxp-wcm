@@ -15,7 +15,7 @@
     <#if image.videoId.data == "">
       <#-- Documents and Media -->
       <a href="${image.link.data}" class="${link_class} banner-box-item" target="${image_target}">
-        <img src="${image.data}" alt="${image.alt.data}" />
+        <img src="${image.getData()}" alt="${image.alt.data}" />
       </a>
 
 

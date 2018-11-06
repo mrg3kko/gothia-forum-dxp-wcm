@@ -22,7 +22,7 @@
 	<div class="simple-push-box">
 		<#if link.data?has_content>
 			<a href="${link.data}" target="${linkTarget}">
-				<img src="${image.data}" alt="${image_alt.data}" />
+				<img src="${image.getData()}" alt="${image_alt.data}" />
 			</a>
 		<#else>
 			<img src="${image.data}" alt="${image_alt.data}" />
