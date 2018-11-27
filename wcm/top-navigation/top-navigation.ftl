@@ -55,6 +55,7 @@
 		</#if>
 
 		<#-- Profile Link -->
+		<#--
 		<#if linkProfile.linkProfileLayout.data?has_content>
 
 			<#assign profileLinkText = linkProfile.data />
@@ -88,6 +89,7 @@
 			</li>
 
 		</#if>
+		-->
 
 	<#else>
 		<#-- Signin -->
