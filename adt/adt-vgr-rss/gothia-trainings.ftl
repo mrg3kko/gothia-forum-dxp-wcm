@@ -26,4 +26,14 @@
     </ul>
   </div>
 
+  <@liferay_util["body-bottom"]>
+    <style type="text/css">
+      /* Align with articles which has no padding on portlet-body */
+      #p_p_id${renderResponse.getNamespace()} .portlet-body {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    </style>
+  </@>
+
 </#if>
